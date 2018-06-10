@@ -1,0 +1,11 @@
+<template>
+    <h1>List</h1>
+
+    <ul>
+        <li repeat.for="article of articles">
+            <a href="/#/detail/${article.Id}">
+                ${article.Name}
+            </a>
+        </li>
+    </ul>
+</template>
