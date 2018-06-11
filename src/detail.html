@@ -1,6 +1,23 @@
 <template>
+
+    <require from='resources/upper'></require>
+    <require from='price'></require>
+
     <h1>Detail</h1>
-    <br> Name: ${article.Name}
-    <br> Price: ${article.Price}
-    <br> Manufacturer: ${article.Manufacturer}
+    <br>
+    Name: ${article.Name}
+    <br>
+    <price article.bind="article"></price>
+    <br>
+    Manufacturer: ${article.Manufacturer}
+    <br>
+    Country: ${article.Country | upper}
+    <br>
+    Type: ${article.Type}
+    <br>
+    Alcohol: ${article.Alcohol}
+    <br>
+    Volume: ${article.Volume}
+    <br>
+    Year: ${article.Year}
 </template>
