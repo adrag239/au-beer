@@ -7,7 +7,7 @@ export class App {
   configureRouter(config: RouterConfiguration, router: Router) {
     config.title = 'Systembolaget';
     config.map([
-      { route: '', moduleId: PLATFORM.moduleName('list'), title: 'Articles' },
+      { route: '', moduleId: PLATFORM.moduleName('list'), title: 'Articles list' },
       { route: 'detail/:id', moduleId: PLATFORM.moduleName('detail'), name: 'detail' }
     ]);
 

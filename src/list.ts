@@ -6,7 +6,7 @@ export class List {
 
     public articles: IArticle[] = [];
 
-    constructor(private dataService: DataService) {
+    constructor(dataService: DataService) {
 
         dataService.getArticles().then( data => {
             this.articles = data;
